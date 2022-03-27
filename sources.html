@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kilder og kontaktinfo</title>
+
+    <style>
+        body{
+            background-color:#a39c9b;
+        }
+        h1{
+            font-size: 8vw;
+            justify-content: center;
+            text-align: center;
+            border-bottom: black 3px solid;
+        }
+        #memory{
+            border: black 2px solid;
+            border-radius: 30px;
+            margin: 20px;
+            padding: 20px;
+            width: 230px;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #overskrift{
+            border: black 2px solid;
+            border-radius: 30px;
+            margin: 20px;
+            padding: 20px;
+            width: 230px;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+      #navn{
+        text-align:center;
+        color:#fff;
+        font-size:100%;
+      }
+
+      #Shimmy{
+        border: black 2px solid;
+        border-radius: 30px;
+        margin: 20px;
+        padding: 20px;
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #Teo{
+        border: black 2px solid;
+        border-radius: 30px;
+        margin: 20px;
+        padding: 20px;
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+      }
+     
+
+      .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        
+      } 
+
+    @media only screen and (max-width: 600px) {
+      .container {
+      display: flex;
+      flex-direction:row;
+    }
+
+      .container {
+      display: flex;
+      flex-direction: column;
+      height: 150px;
+      width: 100%;
+    }
+}
+
+      
+
+      img{
+        border: black 2px solid;
+        border-radius: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+                
+        .menyKnapp {
+  background-color: #30003d55;
+  min-width: 100px;
+  height: 10vh;
+  color: #ffffff;
+  padding: 6px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Raleway';
+}
+
+
+.menyKnapp:hover, .menyKnapp:focus {
+  background-color: #961ae5;
+}
+
+
+.meny {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 0;
+}
+
+
+.menyInnhold {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  min-width: 120px;
+}
+
+
+.menyInnhold a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.menyInnhold a:hover {
+  background-color: #ffffff
+}
+
+
+.show {display:block;}
+    </style>
+</head>
+<body>
+  <section class="header">
+    <div class="headBox">
+        <div class="headLine">
+        <p id="navn">Av Teo and Shimmy</p>
+        </div>
+        <div class="headBar">
+          <div class="meny">
+            <button onclick="dropdownMeny()" class="menyKnapp">Meny</button>
+            <div id="minMeny" class="menyInnhold">
+            <a href="index.html">Hjem</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <h1>Kilder og kontaktinfo</h1>
+  <div class="container">
+    <div id="Kilder">
+      <div id="memory">
+            <a href="https://marina-ferreira.github.io/memory-game/">Inspirasjon Math Memory</a>
+      </div>
+    </div>
+    <div id="KeegtBilde">
+        <img src="../images/Keeg.jpg" alt="TeoOgShimmy">
+    </div>
+    <div id="kontakinfo">
+      <div id="Shimmy">
+        <p>Mail: simenlauvrak77.gmail.com</p>
+        <br>
+        <p>Telefonnummer: 40105836</p>
+      </div>
+      <div id="Teo">
+        <p>Mail: teodor.riddervold.gmail.com</p>
+        <br>
+        <p>Telefonnummer: 40541757</p>
+        </div>
+    </div>
+    
+  </div>
+  <script src="MathMemory.js"></script>
+</body>
+</html>
