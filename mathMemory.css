@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #99ff99;
+}
+
+.memory-game {
+  width: 50vw;
+  height: 50vw;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(25% - 10px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+/* Kortet krymper når det klikkes for å gjøre det intuitivt for spilleren */
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+/* Når klassen 'flip' blir lagt til roteres kortet 180 grader rundt y-aksen, som er mulig fordi vi har gitt kortet 3d egenskaper gjennom preserve 3d og spillbrettets perspektiv på 1000px. Selve overgangen tar 0.5s som angitt under memory-card */ 
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 5px;
+  background: #000000;
+  backface-visibility: hidden;
+  color: white;
+}
+
+/* Rotasjonen blir også lagt til slik at front-facet spinner inn etter backfacet blir gjemt av 'visibility: hidden' */
+.front-face {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 1.5vw;
+  border: 0.5px solid black;
+} 
+
+.back-face {
+  background-color: #000000;
+  
+}
+
+p {
+ font-family: 'Roboto Mono', monospace;
+ text-align: center;
+}
+
+/* Header css: */
+.headBox {
+  width: 100%;
+  height: 7vh;
+  background-color: black;
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.headLine {
+  width: 100%;
+  text-align: center;
+}
+#headLineText {
+  color: white;
+  font-family: 'Raleway';
+  font-size: 22px;
+  
+}
+
+
+/* Dropdown Knapp */
+.menyKnapp {
+  background-color: #000000;
+  min-width: 10vw;
+  height: 7vh;
+  color: #ffffff;
+  padding: 6px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Raleway';
+}
+
+.menyKnapp:hover, .menyKnapp:focus {
+  background-color: #383838;
+}
+
+.meny {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 0;
+}
+
+.menyInnhold {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  min-width: 120px;
+}
+
+.menyInnhold a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.menyInnhold a:hover {
+  background-color: #ffffff
+}
+
+.show {
+  display:block;
+}
+
+#funksjon1{
+  background-image: url("../images/Funksjon_1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#funksjon2{
+  background-image: url("../images/Funksjon_2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.musikk {
+  border: black 1px solid;
+  cursor: pointer;
+  font-family: 'Raleway';
+  margin: 4px auto;
+  padding: 3px;
+  border-radius: 5px;
+}
+.musikk:hover {
+  background-color: white;
+}
+
