@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+}
+
+.header {
+    font-family: 'Ubuntu', sans-serif;
+    min-height: 10vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 50px;
+}
+
+.container-ext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    padding-top: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Kanit';
+}
+
+.container-int {
+    background-color: black;
+    width: 70vw;
+    height: 50vh;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+}
+
+.betting-ui {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    width: 30vw;
+}
+
+.choice {
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.choice .random {
+    font-weight: 700;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.choice #yourChoice {
+    font-weight: 700;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+.gamble {
+    border: 2px solid black;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-radius: 5px;
+    border: rgb(255, 255, 255) 1px dotted;
+}
+
+.body-div {
+    background-image: url(poker.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    width: 100%;
+}
+
+.count-the-gamble {
+    display: flex;
+}
+
+#account {
+    display: flex;
+}
+
+span {
+    color: black;
+}
+
+.hide {
+    display: none;
+}
+
+img {
+    width: 100px;
+    height: 300px;
+}
+
+#pot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 60px;
+    border: 1px solid red;
+    font-size: 25px;
+}
+
+.icons {
+    color: white;
+    font-size: 50px;
+    width: 5vw;
+}
+
+#einar-choice {
+    margin: 0;
+}
+
+#your-choice {
+    font-size: 15px;
+}
+
+.log-in {
+    position: fixed;
+    top: 20vh;
+    right: 34vw;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    padding: 20px 50px;
+    width: 26vw;
+    height: 50vh;
+}
+
+.log-in-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 8vh;
+    margin-top: 20px;
+}
+
+#log-in-input-id {
+    height: 30px;
+    width: 100%;
+    font-size: 15px;
+}
+
+#log-in-input-name {
+    height: 30px;
+    width: 100%;
+}
+
+#log-in-button {
+    align-items: center;
+    background-color: #0A66C2;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+}
+
+#log-in-button:hover,
+#log-in-button:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+#log-in-button:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+#log-in-button:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+#signup-button {
+    margin-left: 17vw;
+}
+
+#signup-button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #4F95DA;
+}
+
+.justify-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.line {
+    margin-top: 6vh;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}
+
+.signup {
+    position: sticky;
+    top: 20vh;
+    right: 34vw;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    padding: 20px 50px;
+    width: 26vw;
+    height: 50vh;
+}
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 8vh;
+    margin-top: 20px;
+}
+
+#signup-input-name {
+    height: 30px;
+    width: 100%;
+}
+
+#register-button {
+    align-items: center;
+    background-color: #0A66C2;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+}
+
+#register-button:hover,
+#register-button:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+#register-button:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+#register-button:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+#log-in-change {
+    margin-left: 0vw;
+}
+
+#log-in-change:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #4F95DA;
+}
+
+#opponent-account {
+    color: white;
+}
+
+.blackout {
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+}
+
+/*button css*/
+.center {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+}
+
+.btn {
+    position: absolute;
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #ff91eb;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 0.3s ease-in-out;
+}
+
+#run>.btn:hover {
+    transition: 0.3s ease-in-out;
+    background: #4F95DA;
+}
+
+#bet>.btn:hover {
+    transition: 0.3s ease-in-out;
+    background: #da4fda;
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+#run {
+    top: 12vh;
+    left: 0vw;
+}
+
+#bet {
+    top: -12vh;
+    left: 0vw;
+}
+
+#your-choice {
+    color: #fff;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 10px;
+}
