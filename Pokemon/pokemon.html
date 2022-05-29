@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Kanit&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="pokemon.css">
+    <title>PokemonGjetter</title>
+</head>
+<body>
+
+  <section class="header">
+    <div class="headBox">
+      <div class="headLine">
+        <p id="navn">Av Teo and Shimmy</p>
+      </div>
+      <div class="headBar">
+        <div class="meny">
+          <button onclick="dropdownMeny()" class="menyKnapp">Meny</button>
+          <div id="minMeny" class="menyInnhold">
+            <a href="../index.html">Hjem</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="header">
+      <h1>Pokemon 1st Gen Gjetter</h1>
+  </div>
+  <div class="container">
+      <div class="card">
+          <h3>GjetteMaskin:</h3>
+          <div class="stats">
+              <p id="correct"></p>
+          </div>
+          <div class="typer">
+              <label>
+                  <input type="text-area" name="words" id="words-form" placeholder="Write here:">
+              </label>
+          </div>
+          <div class="reset">
+              <button id="resetButton">Nullstill</button>
+          </div>
+      </div>
+      <div class="card">
+          <h3>GjetteHjelp:</h3>
+          <div class="stats">
+              <div id="letters">
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="counterDiv">
+      <p id="counter"></p>
+      <p id="high-score"></p>
+  </div>
+  <div id="congratulations" class="show">
+      <h2>Gratulerer!</h2>
+  </div>
+
+  <div id="Hjelpeknapp">
+      <button class="button" role="button" onclick="alert('I dette spillet skal du finne 20 ulike Pokemons fra 1st gen! Gjettehjelpen nedenfor Gjettemaskinen viser oversikten over forbokstaven til de 20 pokemonsa du skal finne. Disse er tilfeldig valgt for vært spill. Øverst i høyre hjørne står det hvor mange pokemons du har gjettet.')"><span class="text">Hjelp</span><span>Spillets gang</span></button>
+  </div>  
+  
+  <script src="pokemon.js"></script>
+</body>
+</html>

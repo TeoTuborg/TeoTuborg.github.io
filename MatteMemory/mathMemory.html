@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Memory Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Bebas+Neue&family=BhuTuka+Expanded+One&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@700&family=Titillium+Web&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mathMemory.css">
+</head>
+<body>
+  <section class="header">
+    <div class="headBox">
+      <div class="headLine">
+        <h1 id="headLineText">Math Memory</h1>
+      </div>
+      <div class="headBar">
+        <div class="meny">
+          <button onclick="dropdownMeny()" class="menyKnapp">Meny</button>
+          <div id="minMeny" class="menyInnhold">
+            <a href="../index.html">Hjem</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="memory-game">
+    <div class="memory-card" data-framework="gr.1">
+      <p class="front-face">Cos 45°</p>
+      <img class="back-face" src="../MatteMemory/bilder/matte.png" alt="Bilde av egnearter" />
+    </div>
+    <div class="memory-card" data-framework="gr.1">
+      <div class="front-face">
+        <p>√2</p>
+        <p>---</p>
+        <p><span> </span>2</p>
+      </div>
+      <img class="back-face" src="../MatteMemory/bilder/matte.png" alt="Bilde av egnearter" />
+    </div>
+
+    <div class="memory-card" data-framework="gr.2">
+    <div class="front-face">
+        <p>Sin 60°</p>
+      </div>
+      <img class="back-face" src="../MatteMemory/bilder/matte.png" alt="Bilde av egnearter" />
+    </div>
+    <div class="memory-card" data-framework="gr.2">
+
+      <div class="front-face">
+        <p>√3</p>
+        <p>---</p>
+        <p><span> </span>2</p>
+      </div>
+      <img class="back-face" src="../MatteMemory/bilder/matte.png" alt="Bilde av egnearter" />
+    </div>
+
+    <div class="memory-card" data-framework="gr.3">
+      <div class="front-face">
+        <p>3 x 2 + 4</p>
+      </div>
+      <img class="back-face" src="../MatteMemory/bilder/matte.png" alt="Bilde av egnearter" />
+    </div>
+    <div class="memory-card" data-framework="gr.3">
+
+      <div class="front-face">
+        <p>10</p>
+      </div>
+      <img class="back-face" src="../MatteMemory/bilder/matte.png" alt="Bilde av egnearter" />
+    </div>
+
+    <div class="memory-card" data-framework="gr.4">
+      <div class="front-face">
+        <p>13 x 13</p>
+      </div>
+      <img class="back-face" src="../MatteMemory/bilder/matte.png" alt="Bilde av egnearter" />
+    </div>
+    <div class="memory-card" data-framework="gr.4">
+
+      <div class="front-face">
+        <p>169</p>
+      </div>
+      <img class="back-face" src="../MatteMemory/bilder/matte.png" alt="Bilde av egnearter" />
+    </div>
+
+    <div class="memory-card" data-framework="gr.5">
+      <div class="front-face">
+        <p>2 + 2</p>
+      </div>
+      <img class="back-face" src="../MatteMemory/bilder/matte.png" alt="Bilde av egnearter" />
+    </div>
+    <div class="memory-card" data-framework="gr.5">
+
+      <div class="front-face">
+        <p>4</p>
+      </div>
+      <img class="back-face" src="../MatteMemory/bilder/matte.png" alt="Bilde av egnearter" />
+    </div>
+
+    <div class="memory-card" data-framework="gr.6">
+      <div class="front-face">
+        <p>(3t * t)'</p>
+      </div>
+      <img class="back-face" src="../MatteMemory/bilder/matte.png" alt="Bilde av egnearter" />
+    </div>
+    <div class="memory-card" data-framework="gr.6">
+
+      <div class="front-face">
+        <p>6t</p>
+      </div>
+      <img class="back-face" src="../MatteMemory/bilder/matte.png" alt="Bilde av egnearter" />
+    </div>
+    <div class="memory-card" data-framework="gr.7">
+      <div class="front-face">
+        <p style="font-size:1vw;">x^(2)-6x+9</p>
+      </div>
+      <img class="back-face" src="../MatteMemory/bilder/matte.png" alt="Bilde av egnearter" />
+    </div>
+    <div class="memory-card" data-framework="gr.7">
+
+      <div class="front-face" id="funksjon1">
+        <p>1</p>
+      </div>
+      <img class="back-face" src="../MatteMemory/bilder/matte.png" alt="Bilde av egnearter" />
+    </div>
+
+    <div class="memory-card" data-framework="gr.8">
+      <div class="front-face">
+        <p style="font-size:1vw;">-x^(2)+6+9</p>
+      </div>
+      <img class="back-face" src="../MatteMemory/bilder/matte.png" alt="Bilde av egnearter" />
+    </div>
+    <div class="memory-card" data-framework="gr.8">
+
+      <div class="front-face" id="funksjon2">
+        <p>1</p>
+      </div>
+      <img class="back-face" src="../MatteMemory/bilder/matte.png" alt="Bilde av egnearter" />
+    </div>
+  </section>
+
+  <div id="audio">
+    <audio src="rio.js" type="audio/mpeg">
+      <button>Play</button>
+  </div>
+
+
+<audio id="myAudio">
+  <source src="rio.wav" type="audio/ogg">
+  <source src="rio.wav" type="audio/mpeg">
+</audio>
+
+<div class="flex">
+  <button class="musikk" onclick="playAudio()" type="button">Skru på bakgrunnsmusikk</button>
+  <button class="musikk" onclick="pauseAudio()" type="button">Pause bakgrunnsmusikk</button> 
+</div>
+  
+ <div id="congratulations" class="noShow">
+    <h2>Gratulerer!</h2>
+</div>
+
+
+  
+  
+  <script src="mathMemory.js"></script>
+</body>
+</html>
