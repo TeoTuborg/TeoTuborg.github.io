@@ -201,3 +201,14 @@ html, body {
 .show {
   display:block;
 }
+
+@media only screen and (max-width: 850px) {
+      #funkyText {
+        font-size:28px;
+      }    
+    }
+@media only screen and (max-width: 640px) {
+      #funkyText {
+        font-size:17px;
+      }    
+    }
