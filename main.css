@@ -117,18 +117,6 @@ html, body {
     margin: 10px;
 }
 
-@media only screen and (max-width: 800px) {
-      #funkyText {
-        font-size:30px;
-      }    
-    }
-@media only screen and (max-width: 640px) {
-      #funkyText {
-        font-size:20px;
-      }    
-    }
-
-
 .headBox {
   width: 100%;
   height: 10vh;
